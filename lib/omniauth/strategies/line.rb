@@ -10,7 +10,8 @@ module OmniAuth
       option :client_options, {
         site: 'https://access.line.me',
         authorize_url: '/oauth2/v2.1/authorize',
-        token_url: '/oauth2/v2.1/token'
+        token_url: '/oauth2/v2.1/token',
+        bot_prompt: 'aggressive'
       }
 
       # host changed
