@@ -6,12 +6,12 @@ module OmniAuth
     class Line < OmniAuth::Strategies::OAuth2
       option :name, 'line'
       option :scope, 'profile openid'
+      option :bot_prompt, 'aggressive'
 
       option :client_options, {
         site: 'https://access.line.me',
         authorize_url: '/oauth2/v2.1/authorize',
-        token_url: '/oauth2/v2.1/token',
-        bot_prompt: 'aggressive'
+        token_url: '/oauth2/v2.1/token'
       }
 
       # host changed
