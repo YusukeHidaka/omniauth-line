@@ -17,6 +17,7 @@ module OmniAuth
       # host changed
       def callback_phase
         options[:client_options][:site] = 'https://api.line.me'
+        options[:bot_prompt]='aggressive'
         super
       end
 
